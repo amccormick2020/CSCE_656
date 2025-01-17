@@ -1,11 +1,11 @@
 import streamlit as st
 
-# Set page configuration to make the sidebar static
 st.set_page_config(initial_sidebar_state='expanded')
 
 # Sidebar for navigation
 page = st.sidebar.selectbox("Select a page", ["Introduction", "Frequently Used Media", "Content Generation/Consumption Challenges"])
 
+# Page 1
 if page == "Introduction":
     st.markdown("<h1 style='text-align: center;'>Introduction</h1>", unsafe_allow_html=True)
     st.markdown("<h1 style='text-align: center; font-size: 25px;'>Austin McCormick</h2>", unsafe_allow_html=True)
@@ -14,6 +14,8 @@ if page == "Introduction":
         st.image('Assignment1/pictures/portrait.JPG')
     with right_co:
         st.text("Howdy! My name is Austin McCormick. I am in Computers and New Media because I'm interested in the impact computers have on media and in turn how computers influence people.")
+
+# Page 2
 elif page == "Frequently Used Media":
     st.markdown("<h1 style='text-align: center;'>Frequently Used Media</h1>", unsafe_allow_html=True)
     st.markdown("### Music")
@@ -107,6 +109,8 @@ elif page == "Frequently Used Media":
         - RealLifeLore
         - Humphrey Yang
         """)
+
+# Page 3
 elif page == "Content Generation/Consumption Challenges":
     st.markdown("<h1 style='text-align: center;'>Content Generation/Consumption Challenges</h1>", unsafe_allow_html=True)
     st.text("The primary challenge I have with consuming content is that I have severe astigmatism. Soft contact lenses can't fully correct my vision with how strong it is, and any slight rotation of the lense causes my vision to be completely blurred, rendering all small text unreadable. Wearing glasses is an improvement, however even minor discrepancies in the glasses such as the lenses placed a couple degrees rotated from the optimal position causes blurred vision, also making text difficult to read. This makes it difficult to read small text on a screen, and not all forms of digital media have methods to appropriately accomodate this.")

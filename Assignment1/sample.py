@@ -11,7 +11,7 @@ if page == "Introduction":
     st.markdown("<h1 style='text-align: center; font-size: 25px;'>Austin McCormick</h2>", unsafe_allow_html=True)
     left_co, right_co = st.columns(2)
     with left_co:
-        st.image('pictures/portrait.JPG')
+        st.image('Assignment1/pictures/portrait.JPG')
     with right_co:
         st.text("Howdy! My name is Austin McCormick. I am in Computers and New Media because I'm interested in the impact computers have on media and in turn how computers influence people.")
 elif page == "Frequently Used Media":
